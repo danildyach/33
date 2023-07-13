@@ -1,0 +1,8 @@
+E:\123\58\58\bin\Debug\58.exe.config
+E:\123\58\58\bin\Debug\58.exe
+E:\123\58\58\bin\Debug\58.pdb
+E:\123\58\58\obj\Debug\58.csproj.AssemblyReference.cache
+E:\123\58\58\obj\Debug\58.csproj.SuggestedBindingRedirects.cache
+E:\123\58\58\obj\Debug\58.csproj.CoreCompileInputs.cache
+E:\123\58\58\obj\Debug\58.exe
+E:\123\58\58\obj\Debug\58.pdb
