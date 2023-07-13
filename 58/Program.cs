@@ -10,7 +10,12 @@ namespace _58
     {
         static void Main(string[] args)
         {
-            zd36();
+            //Console.WriteLine("36");
+            //zd36();
+            //Console.WriteLine("34");
+            //zd34();
+            Console.WriteLine("38");
+            zd38();
         }
         static void zd34()
         {
@@ -53,14 +58,57 @@ namespace _58
             }
             for (int i = 0; i < size; i++)
             {
-                if (i % 2 != 0) 
+                if (i % 2 != 0)
                 {
                     count += array[i];
-                    Console.WriteLine(" qq"+count);
+
                 }
             }
             Console.WriteLine(String.Join(" ", array));
             Console.WriteLine(count);
+        }
+        static void zd38()
+        {
+            //Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
+            //[3.22, 4.2, 1.15, 77.15, 65.2] => 77.15 - 1.15 = 76
+            int size = Convert.ToInt32(Console.ReadLine());
+            double[] array = new double[size];
+            double max = 0;
+            double min = 0;
+            Random random = new Random();
+            for (int i = 0; i < size; i++)
+            {
+                array[i] = random.Next(10, 1000);
+            }
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 1; j < size; j++)
+                {
+                    if (array[i] > array[j])
+                    {
+                        max = array[i];
+                    }
+                    else
+                    {
+                        max = array[j];
+                    }
+                    if (array[i] < array[j])
+                    {
+                        min = array[i];
+                    }
+                    else
+                    {
+                        min = array[j];
+                    }
+
+                }
+            }
+            double result = max - min ;
+            Console.WriteLine($"max = {max}");
+            Console.WriteLine($"min = {min}");
+            Console.WriteLine($"разница = {result}");
+            
+
         }
     }
 }
